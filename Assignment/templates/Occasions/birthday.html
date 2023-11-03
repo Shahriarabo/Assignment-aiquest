@@ -1,0 +1,90 @@
+{% extends 'common-code/base.html' %}
+
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %} Birthday {% endblock title %}
+</head>
+<body>
+    <!-- heder -->
+    
+    {% block Birthday %}
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-lg-12 birthday shadow">
+                <h1 class="text-center mt-4">Birthday Flowers</h1>
+                <p class="text-center mt-2">Send gorgeous Birthday Flowers same day across Canada with Karen's Flower Shop, Award-winning Master Florist. It's such a joy to create and deliver fresh, beautiful flowers to send happiness to friends, family and loved ones on their birthday.</p>
+            </div>
+        </div>
+    </div>
+    {% endblock  %}
+        
+    <!--Birthdaycard  -->
+
+    {% block Birthdaycard %}
+    <div class="container-fluid">
+        <div class="row mt-4">
+            <div class="col-lg-4">
+                <div class="card shadow-lg" style="width: 20rem;">
+                    <img src="{% static 'image/bcard1.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Bright Blooms</h5>
+                      <hr class="w-50  text-center">
+                      <div class="price text-center">
+                            <span class="have_options">from </span>
+                            <span class="f20_price" itemprop="price"><span class="symbol">$</span>75.00</span>
+                      </div>
+                     
+                    </div>
+                </div>    
+            </div>
+            <div class="col-lg-4">
+                <div class="card shadow-lg" style="width: 20rem;">
+                    <img src="{% static 'image/bcard2.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Pastel Petals</h5>
+                      <hr class="w-50  text-center">
+                      <div class="price text-center">
+                            <span class="have_options">from </span>
+                            <span class="f20_price" itemprop="price"><span class="symbol">$</span>75.00</span>
+                      </div>
+                     
+                    </div>
+                </div>    
+            </div>
+            <div class="col-lg-4">
+                <div class="card shadow-lg" style="width: 20rem;">
+                    <img src="{% static 'image/bcard3.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Elegant Whites</h5>
+                      <hr class="w-50  text-center">
+                      <div class="price text-center">
+                            <span class="have_options">from </span>
+                            <span class="f20_price" itemprop="price"><span class="symbol">$</span>75.00</span>
+                      </div>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item text-center mt-5">
+        <h1>Others Item Coming Soon</h1>
+        <hr class="w-50 line mt-4 ">
+    </div>
+
+    <div class="brithbener">
+        <img class="bir" src="{% static 'image/birthday-banner.png' %}" alt="">
+    </div>
+        
+    {% endblock Birthdaycard %}
+        
+
+
+</body>
+</html>

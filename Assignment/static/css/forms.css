@@ -1,0 +1,57 @@
+body{
+	background-color: #85d8d8;
+	
+}
+.forms{
+    margin-left: 31px;
+}
+.navbar{
+	background-color: bisque;
+}
+label {
+	margin: 5px;
+	font-style: italic;
+	font-size: larger;
+	font-family: initial;
+}
+#frist_name {
+	margin-left: 100px;
+	margin-top: 29px;
+}
+#last_name {
+	margin-left: 104px;
+}
+#email {
+	margin-left:137px
+}
+#comfrom_email {
+	margin-left: 64px;
+}
+#password {
+	margin-left: 109px;
+}
+#comfrom_password {
+	margin-left: 34px;
+}
+#which_one_flowers {
+	margin-left: 41px;
+}
+#comment {
+	margin-left: 111px;
+}
+#Agree_to_terms_and_conditions {
+	margin-left: 70px;
+	
+}
+.logo {
+	width: 100px;
+}
+.helptext {
+	margin-left: 27px;
+}
+.errorlist {
+	margin-left: 519px;
+	border: 2px solid black;
+	width:264px;
+	background: azure;
+}

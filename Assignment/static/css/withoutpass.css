@@ -1,0 +1,12 @@
+.botton {
+	width: 67px;
+	padding: 5px;
+	border-radius: 11px;
+	background: #51a1e8;
+}
+button {
+	width: 84px;
+	padding: 4px;
+	background: #3ff3b6;
+	border-radius: 10px;
+}

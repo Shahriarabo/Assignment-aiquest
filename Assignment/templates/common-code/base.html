@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap file link -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- css file link -->
+    
+    {% block css %}
+       <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    {% endblock css %}
+      
+   
+    
+    <title>{% block title %}
+      Flowers
+    {% endblock title %}</title>
+      
+</head>
+<body>
+     <!-- heder section -->
+     
+            
+  <!-- Navber Start -->
+
+  <nav class="navbar navbar-expand-lg navbar-light ">
+      
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="mx-3 logo" src="{% static 'image/logo.png' %}" alt="Don't show this image"/>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'Home' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'service' %}">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'forms' %}">Forms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'register' %}">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'loginform' %}">Login </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Occasions
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{% url 'occasions' %}">Birthday</a></li>
+              <li><a class="dropdown-item" href="{% url 'any' %}">Anniversary</a></li>
+              
+              <li><a class="dropdown-item" href="{% url 'thank' %}">Thanksgiving</a></li>
+            </ul>
+          </li>
+  
+         
+          
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-danger" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+    
+  </nav>
+    <!-- Navber end -->
+    <!-- form -->
+    {% block form %}
+
+    {% endblock form %}
+
+    <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <!-- carousel start -->
+    {% block carousel %}
+
+    {% endblock %}
+
+    <!-- description  -->
+    {% block description %}
+
+    {% endblock description %}
+
+
+
+    <!-- cards  -->
+    {% block card %}
+
+    {% endblock %}
+
+    <!-- bener -->
+    {% block beber %}
+
+    {% endblock beber %}
+
+    <!-- Cards -->
+    {% block cards %}
+
+    {% endblock cards %}
+    
+    <!-- lastcard -->
+    {% block cardlast %}
+    {% endblock cardlast %}
+
+    <!-- footer -->
+    {% block footer %}
+    {% endblock footer %}
+
+    <!-- Birthday -->
+    {% block Birthday %}
+    {% endblock  %}
+
+    <!-- Birthdaycard -->
+    {% block Birthdaycard %}
+    {% endblock Birthdaycard %}
+
+    <!-- Anniversary -->
+    {% block Anniversary %}
+    {% endblock  %}
+
+    <!-- Anniversarycard -->
+    {% block Anniversarycard %}
+    {% endblock Anniversarycard %}
+
+    <!-- Thanksgiving -->
+    {% block Thanksgiving%}
+    {% endblock  %}
+
+    <!-- Anniversarycard -->
+    {% block Thanksgivingcard %}
+    {% endblock Thanksgivingcard %}
+
+
+    <!-- customer info-->
+    {% block customer %}
+    {% endblock customer %}
+
+
+    <!-- forms info-->
+    {% block forms %}
+    {% endblock forms %}
+
+    <!--Js of bootstrap file link -->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

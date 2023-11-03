@@ -1,0 +1,24 @@
+<head>
+    {% load static %}
+    {% block css %}
+       <link rel="stylesheet" href="{% static 'css/registesion.css' %}">
+
+    {% endblock css %}
+</head>
+<body>
+    <form action="" method="POST" novalidate>
+        {% csrf_token %}
+        
+        {% for use in user %}
+            {{use.label_tag}}{{use}}{{use.errors | striptags}} <br> <br>
+        {% endfor %}
+         
+        <input class="botton" type="Submit" value="Submit">
+        <button><a href="{% url 'loginform' %}">Login</a></button>
+
+
+    </form>
+
+
+
+</body>

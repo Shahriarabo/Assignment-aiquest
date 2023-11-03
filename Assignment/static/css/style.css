@@ -1,0 +1,75 @@
+.car{
+    height: 550px;
+}
+.logo {
+	width: 100px;
+}
+
+.carshop {
+	width: 613px;
+	height: 406px;
+}
+.carimg {
+    height: 300px;
+}
+.navbar{
+	background-color: bisque;
+}
+.description {
+	text-align: center;
+}
+.flowers-description{
+	background: #B0D9B1;
+}
+.card-section {
+	background: #ECEE81;
+	height: 308px;
+}
+.img-top {
+	height: 226px;
+}
+.bener {
+	width: 1255px;
+	
+}
+.bener-bg{
+	background-color: rgb(202, 175, 142);
+}
+.cedit {
+	width: 50px;
+	height: 46px;
+}
+.paypal {
+	width: 50px;
+	height: 40px;
+}
+.footer.d-flex.justify-content-between {
+	height: 100px;
+}
+.contact {
+	background: #D0E7D2;
+	height: 450px;
+}
+.birthday {
+	background: #FFDBC3 ;
+	height: 180px;
+	
+}
+.w-50.text-center {
+	margin-left: 71px;
+	height: 3px;
+}
+.line {
+	margin-left: 305px;
+	height: 3px;
+}
+.bir {
+	width: 698px;
+	margin-left: 269px;
+	height: 262px;
+}
+table, th,tr,td {
+	margin-left: 455px;
+	margin-top: 38px;
+	border: 2px solid #000;
+}

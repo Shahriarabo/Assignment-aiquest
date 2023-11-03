@@ -1,0 +1,26 @@
+{% extends 'common-code/base.html' %}
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Home {% endblock title %}</title>
+</head>
+<body>
+    
+    {% block veriable %}
+    <h1>This is a Home Page</h1>
+        
+    <h1>Hi</h1>
+    <h3>I am {{name | upper }}</h3>
+    <h3>I am a student of {{student| escape|linebreaks}}</h3>
+    <h3>My Batch Number {{batch }}</h3>
+    <h3>My Home Town Is {{town | length}}</h3>
+    <h3>My Home Town Is {{town | filesizeformat}}</h3>
+    {% endblock veriable %}
+        
+   
+</body>
+</html>

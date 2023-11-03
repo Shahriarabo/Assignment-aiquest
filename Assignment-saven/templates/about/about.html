@@ -1,0 +1,34 @@
+{% extends 'common-code/base.html' %}
+
+{% block title %} About {% endblock title %}
+
+
+
+
+   
+   {% block info %}
+    {{info}}<br>
+   {% endblock info %}
+    
+
+<body>
+    {% block about %}
+    <h1>This is a About Page</h1>
+
+        <ul>
+            {% for info_list in info %}
+             <li>{{info_list}} </li>
+            {% endfor %}
+            <br>
+
+            
+            
+
+        
+
+
+        </ul>
+       
+   {% endblock about %}
+    
+</body>

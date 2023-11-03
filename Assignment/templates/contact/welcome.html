@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- bootstrap file link -->
+     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+     <!-- css file link -->
+     {% block css %}
+       <link rel="stylesheet" href="{% static 'css/submit.css' %}">
+     {% endblock css %}
+     
+    
+    
+</head>
+<body>
+
+    <h1 class="text" > Successfully</h1>
+
+    <img class="img" src="{% static 'image/welcome.png' %}" alt="Don't show the picture">
+
+</body>    

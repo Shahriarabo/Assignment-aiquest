@@ -1,0 +1,91 @@
+{% extends 'common-code/base.html' %}
+
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %} Anniversary {% endblock title %}
+</head>
+<body>
+    <!-- heder -->
+    
+    {% block Anniversary %}
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-lg-12 birthday shadow">
+                <h1 class="text-center mt-4">Anniversary Flowers</h1>
+                <p class="text-center mt-2">Celebrate a special anniversary with beautiful roses and romantic flowers from Karen's Flower Shop. Our talented designers have been creating beautiful anniversary gifts for 55+ years. Still, need it today? We offer same day flower delivery.</p>
+            </div>
+        </div>
+    </div>
+    {% endblock  %}
+        
+    <!--Birthdaycard  -->
+
+    {% block Anniversarycard %}
+    <div class="container-fluid">
+        <div class="row mt-4">
+            <div class="col-lg-4">
+                <div class="card shadow-lg" style="width: 20rem;">
+                    <img src="{% static 'image/bcard1.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Bright Blooms</h5>
+                      <hr class="w-50  text-center">
+                      <div class="price text-center">
+                            <span class="have_options">from </span>
+                            <span class="f20_price" itemprop="price"><span class="symbol">$</span>75.00</span>
+                      </div>
+                     
+                    </div>
+                </div>    
+            </div>
+            <div class="col-lg-4">
+                <div class="card shadow-lg" style="width: 20rem;">
+                    <img src="{% static 'image/bcard2.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Pastel Petals</h5>
+                      <hr class="w-50  text-center">
+                      <div class="price text-center">
+                            <span class="have_options">from </span>
+                            <span class="f20_price" itemprop="price"><span class="symbol">$</span>75.00</span>
+                      </div>
+                     
+                    </div>
+                </div>    
+            </div>
+            <div class="col-lg-4">
+                <div class="card shadow-lg" style="width: 20rem;">
+                    <img src="{% static 'image/bcard3.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Elegant Whites</h5>
+                      <hr class="w-50  text-center">
+                      <div class="price text-center">
+                            <span class="have_options">from </span>
+                            <span class="f20_price" itemprop="price"><span class="symbol">$</span>75.00</span>
+                      </div>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item text-center mt-5">
+        <h1>Others Item Coming Soon</h1>
+        <hr class="w-50 mt-4 line ">
+    </div>
+
+    <div class="brithbener">
+        <img class="bir" src="{% static 'image/anniversary.jpg' %}" alt="">
+    </div>
+        
+    {% endblock Anniversarycard %}
+        
+
+
+</body>
+</html>
+

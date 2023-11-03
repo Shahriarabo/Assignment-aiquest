@@ -1,0 +1,62 @@
+{% extends 'common-code/base.html' %}
+
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %} Service {% endblock title %}
+</head>
+<body>
+    <!-- customer info-->
+    
+    {% block customer %}
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="customer text-center text-danger mt-4">
+                     <h1>Customer Informetion</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    {% if sd %}
+    <table>
+        <tr>
+            <th>customer_id</th>
+            <th>name</th>
+            <th>email</th>
+            <th>price</th>
+        </tr>
+        
+        {% for c in sd %}
+        <tr>
+            <td>{{c.customer_id}}</td>
+            <td>{{c.name}}</td>
+            <td>{{c.email}}</td>
+            <td>{{c.price}}</td>
+        </tr>
+            
+        {% endfor %}
+            
+    </table >
+     {% else %}
+     <h1>Entry Database</h1>   
+    {% endif %}
+        
+
+
+
+
+    {% endblock customer %}
+        
+
+   
+
+</body>
+</html>

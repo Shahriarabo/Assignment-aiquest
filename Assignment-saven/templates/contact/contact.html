@@ -1,0 +1,41 @@
+{% extends 'common-code/base.html' %}
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Contact {% endblock title %}</title>
+</head>
+<body>
+    
+    
+    {% block contact %}
+        <h1>This is a Contact Page</h1>
+
+
+
+        
+        {% if tag == 10 %}
+            <h1>Successfully templates tag print</h1>
+         
+        {% endif %}
+
+        {% if tag == 1 %}
+            <h1>Successfully templates tag print</h1>
+        {% else %}
+        <h1>Unsuccessfully templates tag print</h1>  
+        {% endif %}
+            
+
+
+
+
+    {% endblock contact %}
+        
+
+
+
+</body>
+</html>
